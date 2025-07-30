@@ -12,7 +12,7 @@ export function SiteFooter() {
             <div>
               <Link href="/" className="inline-flex items-center gap-4 mb-4">
                 <SpherealLogo className="size-8" />
-                <p className="font-bold text-xl text-[#D4AF37]">AurumTrust Gold</p>
+                <p className="font-bold text-xl text-[#D4AF37]">AfriBullion</p>
               </Link>
               <p className="text-sm text-[#222] mb-4">Uganda&apos;s premier precious metals dealer, offering secure investment solutions and fine jewellery.</p>
               <div className="flex gap-4 mb-4">
@@ -95,7 +95,7 @@ export function SiteFooter() {
               <Image src="/assets/brands/insured-logo.svg" alt="Fully Insured" width={24} height={24} className="h-6 w-auto" />
               <Image src="/assets/brands/secure-logo.svg" alt="Secure Storage" width={24} height={24} className="h-6 w-auto" />
             </div>
-            <p className="text-sm text-[#888]">© {new Date().getFullYear()} AurumTrust Gold. All rights reserved.</p>
+            <p className="text-sm text-[#888]">© {new Date().getFullYear()} AfriBullion. All rights reserved.</p>
           </div>
         </div>
       </footer>
