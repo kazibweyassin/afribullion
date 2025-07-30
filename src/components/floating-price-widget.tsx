@@ -1,36 +1,39 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 
 export function FloatingPriceWidget() {
-  const [price, setPrice] = useState<string>("");
+  const [price, setPrice] = useState<string>("-");
   const [change, setChange] = useState<string>("");
   const [isPositive, setIsPositive] = useState<boolean>(true);
   const [isUpdating, setIsUpdating] = useState<boolean>(false);
   const [prevPrice, setPrevPrice] = useState<number | null>(null);
 
-  // Fetch live gold price from API
+  const TWO_WEEKS_MS = 14 * 24 * 60 * 60 * 1000;
+
   const fetchPrice = async () => {
     setIsUpdating(true);
     try {
       const res = await fetch("/api/gold-prices");
       const data = await res.json();
-      // XAU is gold price per troy ounce in USD
       const goldPriceUSD = data.rates?.XAU;
+
       if (goldPriceUSD) {
-        // Example: convert USD to UGX (Uganda Shilling)
-        // You may want to fetch USD/UGX rate from the API for accuracy
         const pricePerOunceUSD = 1 / goldPriceUSD;
-        const usdToUgx = 3800; // Example rate
+        const usdToUgx = 3800; // Use actual forex API for accuracy
         const goldPriceUGX = pricePerOunceUSD * usdToUgx;
+
         setPrice(goldPriceUGX.toLocaleString(undefined, { maximumFractionDigits: 0 }));
+
         if (prevPrice !== null) {
           const diff = goldPriceUGX - prevPrice;
           const percent = (diff / prevPrice) * 100;
           setChange(`${percent > 0 ? "+" : ""}${percent.toFixed(2)}%`);
           setIsPositive(percent >= 0);
         }
+
         setPrevPrice(goldPriceUGX);
+        localStorage.setItem("lastGoldFetch", Date.now().toString());
       } else {
         setPrice("-");
         setChange("");
@@ -43,22 +46,25 @@ export function FloatingPriceWidget() {
   };
 
   useEffect(() => {
-    fetchPrice();
-    const interval = setInterval(fetchPrice, 30000); // Update every 30 seconds
-    return () => clearInterval(interval);
+    const lastFetch = localStorage.getItem("lastGoldFetch");
+    const now = Date.now();
+
+    if (!lastFetch || now - parseInt(lastFetch, 10) > TWO_WEEKS_MS) {
+      fetchPrice();
+    }
   }, []);
 
   return (
     <div className="floating-price-widget">
       <div className="price-label">Live Gold Price</div>
       <div className={`price-value ${isUpdating ? "price-updating" : ""}`}>
-        UGX {price ? price : "-"}/oz
+        UGX {price}/oz
       </div>
       {change && (
         <div className={`price-change ${isPositive ? "positive" : "negative"}`}>
-          {change} today
+          {change} (since last update)
         </div>
       )}
     </div>
   );
-} 
+}

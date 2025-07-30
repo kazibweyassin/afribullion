@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import { SpherealLogo } from "@/components/sphereal-logo";
 
@@ -61,6 +61,7 @@ const NAV_ITEMS = [
 export function SiteHeader() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const dropdownTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#E5E7EB] shadow-sm">
@@ -76,8 +77,13 @@ export function SiteHeader() {
             <div
               key={item.label}
               className="relative group"
-              onMouseEnter={() => setOpenDropdown(item.label)}
-              onMouseLeave={() => setOpenDropdown(null)}
+              onMouseEnter={() => {
+                if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+                setOpenDropdown(item.label);
+              }}
+              onMouseLeave={() => {
+                dropdownTimeoutRef.current = setTimeout(() => setOpenDropdown(null), 200);
+              }}
             >
               <button
                 className="font-semibold text-base text-[#222] hover:text-[#D4AF37] px-3 py-2 rounded transition-colors focus:outline-none"
