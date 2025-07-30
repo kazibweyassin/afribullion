@@ -10,17 +10,17 @@ import { ReactNode } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AurumTrust Gold - Uganda's Premier Precious Metals Dealer",
+  title: "AfriBullion - Uganda's Premier Precious Metals Dealer",
   description: "Buy gold, silver and platinum bullion coins, bars and storage products from Uganda's premier precious metals dealer. LBMA certified, fully insured, secure storage.",
-  creator: "AurumTrust Gold",
+  creator: "AfriBullion",
   openGraph: {
-    title: "AurumTrust Gold - Uganda's Premier Precious Metals Dealer",
+    title: "AfriBullion - Uganda's Premier Precious Metals Dealer",
     description: "Buy gold, silver and platinum bullion coins, bars and storage products from Uganda's premier precious metals dealer.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AurumTrust Gold - Uganda's Premier Precious Metals Dealer",
+    title: "AfriBullion - Uganda's Premier Precious Metals Dealer",
     description: "Buy gold, silver and platinum bullion coins, bars and storage products from Uganda's premier precious metals dealer.",
   },
 };

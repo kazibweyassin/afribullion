@@ -22,7 +22,7 @@ export function CallToActionSection() {
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Get exclusive access to gold market analysis, investment tips, and special offers. 
-            Join thousands of investors who trust AurumTrust Gold for their precious metals needs.
+            Join thousands of investors who trust AfriBullion for their precious metals needs.
           </p>
           
           {!subscribed ? (

@@ -4,15 +4,15 @@ import { useState } from "react";
 
 const FAQ_ITEMS = [
   {
-    question: "How do I buy gold from AurumTrust Gold?",
-    answer: "Buying gold from AurumTrust Gold is simple and secure. Browse our products online, select your preferred gold bars or coins, and click 'Shop Now'. Our expert team will guide you through the entire process, from secure payment to delivery or storage options. You can also call us directly at +256 700 000 000 for personalized assistance."
+    question: "How do I buy gold from AfriBullion?",
+    answer: "Buying gold from AfriBullion is simple and secure. Browse our products online, select your preferred gold bars or coins, and click 'Shop Now'. Our expert team will guide you through the entire process, from secure payment to delivery or storage options. You can also call us directly at +256 700 000 000 for personalized assistance."
   },
   {
     question: "Is my gold insured and safely stored?",
-    answer: "Absolutely! All gold purchased through AurumTrust Gold is fully insured and stored in secure, audited vaults that meet international standards. We offer both secure storage in our professional facilities or insured delivery to your location in Uganda. Our insurance coverage protects your investment against theft, damage, and other risks."
+    answer: "Absolutely! All gold purchased through AfriBullion is fully insured and stored in secure, audited vaults that meet international standards. We offer both secure storage in our professional facilities or insured delivery to your location in Uganda. Our insurance coverage protects your investment against theft, damage, and other risks."
   },
   {
-    question: "Can I sell my gold back to AurumTrust Gold?",
+    question: "Can I sell my gold back to AfriBullion?",
     answer: "Yes! We offer a comprehensive buyback guarantee at competitive market rates. Whether you purchased from us or elsewhere, we'll provide you with a fair market quote and handle the transaction securely. Our buyback process is quick, transparent, and includes proper documentation for your records."
   },
   {

@@ -5,7 +5,7 @@ export default function AboutPage() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-[#222] mb-6">
-            About AurumTrust Gold
+            About AfriBullion
           </h1>
           <p className="text-xl text-[#222] max-w-3xl mx-auto">
             Uganda&apos;s premier precious metals dealer, committed to providing secure, 
@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold text-[#222] mb-6">Our Story</h2>
             <p className="text-[#222] mb-4 leading-relaxed">
-              Founded in 2020, AurumTrust Gold emerged from a vision to democratize gold investment 
+              Founded in 2020, AfriBullion emerged from a vision to democratize gold investment 
               in Uganda and East Africa. We recognized the need for a trusted, transparent, and 
               accessible platform for precious metals trading.
             </p>
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
         {/* Why Choose Us */}
         <div className="bg-[#F5F5F5] p-12 rounded-lg mb-16">
-          <h2 className="text-3xl font-bold text-[#222] mb-8 text-center">Why Choose AurumTrust Gold?</h2>
+          <h2 className="text-3xl font-bold text-[#222] mb-8 text-center">Why Choose AfriBullion?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
               <span className="text-3xl mb-3 block">🏆</span>

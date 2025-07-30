@@ -9,7 +9,7 @@ import Image from "next/image";
 export function TestimonialsSection() {
   const TESTIMONIALS = [
     {
-      quote: "AurumTrust Gold made my first gold investment easy and secure. The team guided me every step of the way!",
+      quote: "AfriBullion made my first gold investment easy and secure. The team guided me every step of the way!",
       from: "Julien Gournay",
       position: "Private Investor",
       profile_picture: Profile4,
@@ -27,7 +27,7 @@ export function TestimonialsSection() {
       profile_picture: Profile2,
     },
     {
-      quote: "AurumTrust Gold offers the best buyback guarantee and customer service I've experienced in the industry.",
+      quote: "AfriBullion offers the best buyback guarantee and customer service I've experienced in the industry.",
       from: "Rene Wells",
       position: "Retired Executive",
       profile_picture: Profile3,

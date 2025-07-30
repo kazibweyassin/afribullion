@@ -8,7 +8,7 @@ export function FeaturesSection() {
         {/* Main Features Grid */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-[#222] mb-6">
-            Why Choose <span className="text-[#D4AF37]">AurumTrust Gold</span>?
+            Why Choose <span className="text-[#D4AF37]">AfriBullion</span>?
           </h2>
           <p className="text-xl text-[#222] max-w-3xl mx-auto leading-relaxed">
             Experience the gold standard in precious metals investment. We combine security, transparency, 
@@ -112,7 +112,7 @@ export function FeaturesSection() {
         {/* Investment Process */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#222] mb-4">How to Invest with AurumTrust Gold</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#222] mb-4">How to Invest with AfriBullion</h3>
             <p className="text-xl text-[#222] max-w-2xl mx-auto">
               Getting started with gold investment has never been easier. Follow these simple steps 
               to begin your journey towards financial security.
@@ -200,7 +200,7 @@ export function FeaturesSection() {
         {/* Trust Badges */}
         <div className="bg-white rounded-3xl p-12 shadow-lg border border-gray-100">
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#222] mb-4">Why Trust AurumTrust Gold?</h3>
+            <h3 className="text-3xl md:text-4xl font-bold text-[#222] mb-4">Why Trust AfriBullion?</h3>
             <p className="text-xl text-[#222] max-w-2xl mx-auto">
               Our commitment to excellence is backed by industry certifications and proven track record
             </p>

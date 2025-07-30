@@ -67,7 +67,7 @@ export function SiteHeader() {
       <section className="container flex items-center justify-between h-18">
         <Link href="/" className="flex items-center gap-4">
           <SpherealLogo />
-          <p className="font-bold text-2xl text-[#D4AF37]">AurumTrust Gold</p>
+          <p className="font-bold text-2xl text-[#D4AF37]">AfriBullion</p>
         </Link>
         
         {/* Desktop Navigation */}
