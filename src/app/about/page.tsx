@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from 'react';
 import { Award, Shield, Building, MapPin, Target, Eye, Gem, Users, TrendingUp, Clock, CheckCircle } from 'lucide-react';
 
