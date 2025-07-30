@@ -15,7 +15,7 @@ export function HeroSection() {
       description: "Pure 24k LBMA certified",
       price: 2350000,
       change: 2.5,
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=100&q=80",
+      image: "gold-bars.jpg",
       badge: "Best Seller"
     },
     {
@@ -24,7 +24,7 @@ export function HeroSection() {
       description: "1oz American Eagle",
       price: 2370000,
       change: 1.8,
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=100&q=80",
+      image: "Liberty_$50_Obverse.png",
       badge: "Premium"
     },
     {
@@ -33,7 +33,7 @@ export function HeroSection() {
       description: "1oz South African",
       price: 2340000,
       change: 3.2,
-      image: "https://images.unsplash.com/photo-1594736797933-d0fff2e1a5b3?auto=format&fit=crop&w=100&q=80",
+      image: "1oz-coin-krugerrand.jpg",
       badge: "Popular"
     }
   ];

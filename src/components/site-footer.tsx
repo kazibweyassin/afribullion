@@ -307,6 +307,10 @@ export function SiteFooter() {
                   </div>
                   <div className="text-sm text-gray-400">
                     <p>Licensed & Regulated</p>
+                    <a href="/support/policies#aml" className="underline text-amber-400 hover:text-amber-500 ml-2">Anti-Money Laundering Policy</a>
+                   <div className="mt-2 text-xs text-gray-500 max-w-xl">
+                     <strong>Anti-Money Laundering Policy:</strong> AfriBullion is committed to preventing money laundering and terrorist financing. We verify customer identity, monitor transactions, and comply with all regulatory requirements to ensure a safe and transparent marketplace for precious metals.
+                   </div>
                   </div>
                 </div>
                 
