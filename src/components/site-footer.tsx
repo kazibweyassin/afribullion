@@ -1,8 +1,4 @@
-import {cn} from "@/lib/utils";
-import {buttonVariants} from "@/components/ui/button";
-import {Star} from "lucide-react";
 import Link from "next/link";
-import {siteConfig} from "@/site-config";
 import {SpherealLogo} from "@/components/sphereal-logo";
 import Image from "next/image";
 

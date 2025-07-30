@@ -1,4 +1,4 @@
-import LogoImage from "@/assets/images/sphereal-logo.svg?url"
+// ...existing code...
 import {ComponentPropsWithoutRef} from "react";
 import {cn} from "@/lib/utils";
 
