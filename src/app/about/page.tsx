@@ -35,7 +35,7 @@ export default function AboutPage() {
 
   useEffect(() => {
     if (isVisible['animate-stats']) {
-      const animateCounter = (key, target, suffix = '') => {
+      const animateCounter = (key: keyof typeof counters, target: number) => {
         let current = 0;
         const increment = target / 50;
         const timer = setInterval(() => {
@@ -135,7 +135,7 @@ export default function AboutPage() {
           >
             <div className="inline-flex items-center bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Award className="w-4 h-4 mr-2" />
-              Uganda's Premier Precious Metals Dealer
+              Uganda&apos;s Premier Precious Metals Dealer
             </div>
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-amber-800 to-yellow-600 bg-clip-text text-transparent mb-6">
               About AfriBullion
@@ -170,12 +170,12 @@ export default function AboutPage() {
                   accessible platform for precious metals trading.
                 </p>
                 <p>
-                  What started as a small family business has grown into Uganda's leading precious 
+                  What started as a small family business has grown into Uganda&apos;s leading precious 
                   metals dealer, serving thousands of satisfied customers across the region. Our commitment 
                   to integrity, security, and customer service has remained unwavering.
                 </p>
                 <p>
-                  Today, we're proud to be LBMA certified, fully insured, and trusted by both 
+                  Today, we&apos;re proud to be LBMA certified, fully insured, and trusted by both 
                   individual investors and institutional clients throughout East Africa.
                 </p>
               </div>
@@ -189,7 +189,7 @@ export default function AboutPage() {
               <div className="relative bg-white p-8 rounded-2xl shadow-2xl">
                 <img 
                   src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" 
-                  alt="Gold bullion bars representing AfriBullion's premium precious metals" 
+                  alt="Gold bullion bars representing AfriBullion&apos;s premium precious metals" 
                   className="w-full rounded-xl shadow-lg"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-amber-500 text-white p-4 rounded-xl shadow-lg">
@@ -247,7 +247,7 @@ export default function AboutPage() {
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">Why Choose AfriBullion?</h2>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Experience the difference of working with East Africa's most trusted precious metals dealer
+                Experience the difference of working with East Africa&apos;s most trusted precious metals dealer
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

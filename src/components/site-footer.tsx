@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { 
   Award, Shield, Lock, MapPin, Mail, Phone, Clock, 
   TrendingUp, ExternalLink, Facebook, Twitter, Instagram,
-  ChevronRight, Star, Users, Building2
+  ChevronRight, Star, Building2
 } from 'lucide-react';
 
 // Mock SpherealLogo component
@@ -14,13 +14,11 @@ const SpherealLogo = ({ className }) => (
 );
 
 export function SiteFooter() {
-  const [currentTime, setCurrentTime] = useState(new Date());
   const [isBusinessHours, setIsBusinessHours] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
       const now = new Date();
-      setCurrentTime(now);
       
       // Check if it's business hours (9 AM - 6 PM, Mon-Sat)
       const hour = now.getHours();
@@ -125,7 +123,7 @@ export function SiteFooter() {
                 </div>
                 
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  Uganda's premier precious metals dealer, offering secure investment solutions and fine jewellery with unmatched expertise.
+                  Uganda&apos;s premier precious metals dealer, offering secure investment solutions and fine jewellery with unmatched expertise.
                 </p>
 
                 {/* Social Links */}
@@ -256,7 +254,7 @@ export function SiteFooter() {
                   <div className="flex items-center gap-3 text-gray-300">
                     <Mail className="w-5 h-5 text-amber-400" />
                     <a href="mailto:info@aurumtrustgold.com" className="hover:text-amber-400 transition-colors">
-                      info@aurumtrustgold.com
+                      info@AfriBullion.com
                     </a>
                   </div>
                   <div className="flex items-center gap-3 text-gray-300">
@@ -319,7 +317,7 @@ export function SiteFooter() {
                     © {new Date().getFullYear()} AfriBullion. All rights reserved.
                   </p>
                   <p className="text-xs text-gray-500 mt-1">
-                    Securing Uganda's financial future, one ounce at a time.
+                    Securing Uganda&apos;s financial future, one ounce at a time.
                   </p>
                 </div>
               </div>

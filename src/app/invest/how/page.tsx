@@ -20,7 +20,7 @@ export default function HowToInvestPage() {
           <strong>Choose Storage or Delivery:</strong> Opt for fully insured vault storage or have your metals delivered safely to your address.
         </li>
         <li>
-          <strong>Track Your Investment:</strong> Monitor live prices and your portfolio through your dashboard. Enjoy peace of mind with AfriBullion's buyback guarantee.
+          <strong>Track Your Investment:</strong> Monitor live prices and your portfolio through your dashboard. Enjoy peace of mind with AfriBullion&apos;s buyback guarantee.
         </li>
       </ol>
       <div className="bg-[#FFF8E1] border border-[#D4AF37] rounded-lg p-6 mb-6">
