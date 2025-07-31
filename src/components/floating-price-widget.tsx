@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export function FloatingPriceWidget() {
   const [price, setPrice] = useState<string>("-");
@@ -9,9 +9,9 @@ export function FloatingPriceWidget() {
   const [isUpdating, setIsUpdating] = useState<boolean>(false);
   const [prevPrice, setPrevPrice] = useState<number | null>(null);
 
-  const TWO_WEEKS_MS = 14 * 24 * 60 * 60 * 1000;
+  const TWO_DAYS_MS = 2 * 24 * 60 * 60 * 1000;
 
-  const fetchPrice = async () => {
+  const fetchPrice = useCallback(async () => {
     setIsUpdating(true);
     try {
       const res = await fetch("/api/gold-prices");
@@ -43,16 +43,13 @@ export function FloatingPriceWidget() {
       setChange("");
     }
     setIsUpdating(false);
-  };
+  }, [prevPrice]);
 
   useEffect(() => {
-    const lastFetch = localStorage.getItem("lastGoldFetch");
-    const now = Date.now();
-
-    if (!lastFetch || now - parseInt(lastFetch, 10) > TWO_WEEKS_MS) {
-      fetchPrice();
-    }
-  }, []);
+    fetchPrice();
+    const interval = setInterval(fetchPrice, TWO_DAYS_MS);
+    return () => clearInterval(interval);
+  }, [fetchPrice, TWO_DAYS_MS]);
 
   return (
     <div className="floating-price-widget">
